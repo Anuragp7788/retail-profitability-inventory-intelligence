@@ -11,7 +11,7 @@ A fictional multi-store retailer has asked an analyst to investigate profitabili
 | Executive leadership | Which business areas need attention first? |
 | Category / merchandising manager | Which products/categories need pricing, promotion or assortment review? |
 | Store operations manager | Which stores are underperforming, and what operational patterns need investigation? |
-| Inventory planner | Which store/SKU combinations need replenishment or review for excess stock? |
+| Inventory planner | Which store/SKU combinations need replenishment or review for excess stock? (requires the separate inventory source) |
 | Finance | Are reported revenue and profit measures consistent and reconcilable? |
 
 ## Questions and expected outputs
@@ -21,7 +21,7 @@ A fictional multi-store retailer has asked an analyst to investigate profitabili
 | Is growth profitable? | Revenue, profit, margin trend | Executive trend view |
 | Are discounts eroding profit? | Discount bands and margin by product/category | Discount diagnostic |
 | Which products need intervention? | Sales, profit, margin, order contribution | Product drilldown |
-| Which stores need attention? | Sales, profit, margin, order count by store/region | Store scorecard |
+| Which geographic areas need attention? | Sales, profit, margin, order count by region/state/city | Geographic scorecard (not store-level) |
 | Where is stock at risk? | On-hand stock, recent unit demand, days of supply | Inventory risk table |
 | Where is stock potentially excessive? | Stock compared with recent demand and movement | Slow-moving / excess-stock review |
 
