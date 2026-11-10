@@ -31,11 +31,11 @@ A multi-store retailer wants to understand:
 
 ## Data sources and scope
 
-This project is designed to use two complementary public datasets. They will be profiled independently before any integration.
+This project uses complementary public datasets that will be profiled independently before any integration. The Sample Superstore file contains geographic fields (region, state and city), but no store ID and no inventory snapshots. Therefore, this source supports geographic performance analysis, not store-level performance or inventory KPIs.
 
 | Dataset | Planned use | Important limitation to validate |
 |---|---|---|
-| [Sample Superstore (Kaggle)](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final) | Order-level sales, discount, profit, customer, product and geography analysis | It is a sample dataset, not a live retailer feed. Confirm whether a returns file and cost fields are included in the downloaded version. |
+| [Sample Superstore (Kaggle)](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final) | Order-line sales, discount, recorded profit, customer, product and geography analysis | No store ID, inventory snapshot or explicit returns table in the supplied CSV. It is a sample dataset, not a live retailer feed. |
 | [Retail data — Mendeley Data](https://data.mendeley.com/datasets/27x8mjm8k4/1) | Daily store/SKU sales and stock-on-hand analysis | Inspect exact schema, grain, time coverage, units, licence and whether store/SKU identifiers align with the sales dataset. |
 
 **Integration rule:** Do not join these sources by approximate names or assume that similarly named products/stores are identical. A combined analysis is permitted only when a defensible store/product/date mapping exists. Otherwise, report sales profitability and inventory health as separate but complementary analyses.
