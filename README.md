@@ -4,7 +4,7 @@
 
 A practical analytics project built around a retail business question: how can leadership understand sales performance, identify profit leakage, and improve inventory decisions using reliable data?
 
-> **Current stage:** Repository, business scope, initial Superstore data profile, first EDA notebook, and initial PostgreSQL schema / analysis queries are in place. The Power BI dashboard and final recommendations are planned deliverables, not completed outputs yet.
+> **Current stage:** Sales and profitability analysis has been calculated and documented, with reproducible Python and SQL starter assets, Power BI measures and a local Excel reconciliation workbook. Local execution/reconciliation and the Power BI Desktop report remain to be completed. The separate inventory source still needs to be downloaded and profiled.
 
 ---
 
@@ -49,7 +49,7 @@ Using the Sample Superstore transaction dataset:
 
 ### 2. Inventory health analysis
 
-Using a separate daily inventory dataset, subject to source and schema validation:
+Using the separate [Retail Transactions and Stocks Data](https://data.mendeley.com/datasets/27x8mjm8k4/1) source, subject to local download and schema validation:
 
 - On-hand stock analysis.
 - Recent observed unit sales and demand velocity.
@@ -67,7 +67,7 @@ Using a separate daily inventory dataset, subject to source and schema validatio
 
 ## Important data scope and limitations
 
-The two candidate sources are profiled independently. **They will not be joined unless a defensible shared key and compatible grain are demonstrated.**
+The two sources are analysed as separate workstreams. The Superstore dataset is a different sample from the Mendeley inventory dataset; there is no established common key, so they must not be joined. **They will not be joined unless a defensible shared key and compatible grain are demonstrated.**
 
 | Source | Intended analysis | Known scope |
 |---|---|---|
