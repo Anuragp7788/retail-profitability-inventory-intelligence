@@ -1,9 +1,26 @@
-# Power BI
+# Power BI dashboard
 
-Planned report pages:
-1. Executive overview — revenue, profit, margin, orders, trends and key exceptions.
-2. Product profitability — category/subcategory/product contribution and discount analysis.
-3. Store performance — store/region comparisons and drill-through.
-4. Inventory intelligence — on-hand stock, demand velocity, days of supply and stock-risk segmentation.
+The dashboard is a planned deliverable. No completed Power BI report is included yet.
 
-The final report will include a model diagram, DAX measure definitions, refresh instructions and screenshots. KPI values will be populated only from validated outputs.
+See [dashboard_specification.md](../docs/dashboard_specification.md) for the intended pages, business questions, filters and validation rules.
+
+## Planned pages
+
+1. Executive overview.
+2. Product and category profitability.
+3. Customer and order behaviour.
+4. Geographic performance.
+5. Inventory health (only after the separate inventory source is validated).
+
+## Model and KPI rules
+
+- Define relationships and table grain before creating measures.
+- Use a proper date table for time intelligence.
+- Calculate AOV at order grain.
+- Calculate profit margin from total profit / total sales.
+- Do not average row-level margins to produce an overall margin.
+- Do not label geography as store performance.
+- Inventory turnover requires COGS and average inventory value.
+- Reconcile every headline KPI with the SQL and Python outputs.
+
+The final `.pbix`, exported screenshots and measure documentation will be added after the dashboard is built and validated.
