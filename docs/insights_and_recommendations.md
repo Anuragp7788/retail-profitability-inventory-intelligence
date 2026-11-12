@@ -1,5 +1,9 @@
 # Business insights and recommendations
 
+## Current evidence
+
+The first sales and profitability findings are documented in [reports/validated_sales_findings.md](../reports/validated_sales_findings.md). That report includes the observed results, interpretation, investigation recommendations and limitations. This file remains the template for adding new findings from the inventory workstream.
+
 ## Publication rule
 
 This document is the evidence log for the final case study. Do not add invented findings, generic recommendations presented as results, or unsupported financial impact estimates.
@@ -29,13 +33,13 @@ Every published insight must include:
 
 | Topic | What to test | Status |
 |---|---|---|
-| Profit leakage | Identify products/subcategories with negative or unusually low recorded profit | Pending analysis |
-| Discounting | Compare margin across discount bands and categories | Pending analysis |
-| Product mix | Identify products with high sales contribution but weak profit contribution | Pending analysis |
-| Geography | Compare sales and profit by region/state/city | Pending analysis |
-| Order value | Compare order-level AOV by segment and time | Pending analysis |
+| Profit leakage | Identify products/subcategories with negative or unusually low recorded profit | Analysed — see validated findings |
+| Discounting | Compare margin across discount bands and categories | Analysed — see validated findings |
+| Product mix | Identify products with high sales contribution but weak profit contribution | Partially analysed — product-level follow-up pending |
+| Geography | Compare sales and profit by region/state/city | Analysed — see validated findings |
+| Order value | Compare order-level AOV by segment and time | Baseline AOV calculated; segment/time drilldown pending |
 | Inventory risk | Compare on-hand stock with recent observed unit sales | Pending separate dataset validation |
 
 ## Final executive summary
 
-To be completed after the analysis is validated. It should state the three to five most decision-relevant findings, their supporting evidence, the recommended actions and the most important limitations.
+The initial sales-workstream summary is available in [reports/validated_sales_findings.md](../reports/validated_sales_findings.md). The final combined executive summary will be completed after the inventory source is downloaded and analysed.
