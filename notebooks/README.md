@@ -1,10 +1,16 @@
 # Notebooks
 
-Notebooks will be added after the source files are downloaded and profiled.
+Run notebooks in numerical order. Each notebook should explain its purpose, inputs, assumptions, validation checks and outputs.
 
-Planned sequence:
-1. `01_data_quality_and_eda.ipynb` — schema, grain, nulls, duplicates, date coverage, distributions and key checks.
-2. `02_sales_profitability_analysis.ipynb` — sales dataset cleaning, descriptive analysis and validation.
-3. `03_inventory_analysis.ipynb` — inventory dataset cleaning, demand windows, stock cover and risk flags.
+| Notebook | Purpose | Status |
+|---|---|---|
+| [01_data_quality_and_eda.ipynb](01_data_quality_and_eda.ipynb) | Load and profile Sample Superstore; inspect grain, schema, missingness, duplicates, dates, numeric fields and baseline KPIs | Created; local execution/reconciliation pending |
+| 02_inventory_data_profile.ipynb | Profile the separate daily inventory dataset | Planned after source download and licence review |
+| 03_sales_profitability_analysis.ipynb | Deeper product, category, discount and geographic analysis | Planned |
+| 04_inventory_health_analysis.ipynb | Stock cover, demand velocity and inventory exceptions | Planned after inventory schema validation |
 
-Do not create findings or hardcode summary numbers before executing the analysis.
+## Input setup
+
+Download Sample Superstore from the source link in the root README and place the CSV at `data/raw/Sample - Superstore.csv`. Raw data is intentionally not committed until redistribution permission is confirmed.
+
+The first notebook reads this supplied file with `encoding="cp1252"` because the inspected copy contains Windows-1252 characters.
