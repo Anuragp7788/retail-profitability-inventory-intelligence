@@ -103,6 +103,18 @@ AOV is calculated by summing line sales within each Order ID and averaging those
 
 These are initial dataset-level figures, not final business recommendations. Re-run the notebook and reconcile them after loading the source locally.
 
+## Key business findings from the supplied sales file
+
+The first full sales/profitability analysis has now been calculated from the supplied CSV. The detailed evidence and limitations are in [reports/validated_sales_findings.md](reports/validated_sales_findings.md).
+
+- **Furniture margin is much lower:** 2.49%, compared with 17.40% for Technology and 17.04% for Office Supplies.
+- **Tables and Bookcases are loss-making subcategories:** Tables recorded -$17,725.48 profit; Bookcases recorded -$3,472.56.
+- **High discounts need investigation:** order lines with discounts of 30% or more recorded -$135,376.06 aggregate profit and -37.32% margin. This is an association, not proof of causation.
+- **2017 sales grew faster than profit:** sales increased 20.36% year over year, while recorded profit increased 14.24%; margin moved from 13.43% to 12.74%.
+- **Regional margin varies:** Central recorded 7.92% margin, compared with 14.94% in West.
+
+These are historical sample-data findings, not current market facts or guaranteed savings. See the linked report for calculation scope, interpretation, validation steps and caveats.
+
 ## Repository structure
 
 ```text
@@ -211,7 +223,11 @@ Then run `sql/02_sales_profitability_analysis.sql`. Compare its totals with the 
 | [Initial data profile](docs/data_profile_sample_superstore.md) | Observed data quality and baseline profile |
 | [Dashboard specification](docs/dashboard_specification.md) | Planned Power BI pages and interactions |
 | [Solution architecture](docs/solution_architecture.md) | Data flow, system design and integration decisions |
-| [Insights and recommendations](docs/insights_and_recommendations.md) | Evidence log for final business recommendations |
+| [Power BI DAX measures](powerbi/measures.dax) | KPI measure definitions for the report |
+| [Power Query import](powerbi/power_query_sample_superstore.m) | CSV import and data typing template |
+| [Python analysis script](python/run_sales_analysis.py) | Reproducible grouped sales and profitability outputs |
+| [Insights and recommendations](docs/insights_and_recommendations.md) | Recommendation framework |
+| [Validated sales findings](reports/validated_sales_findings.md) | Evidence-backed findings and investigation priorities |
 | [Reproducibility and governance](docs/reproducibility_and_data_governance.md) | Source handling, environment and validation |
 
 ## Project status
