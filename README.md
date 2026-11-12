@@ -237,14 +237,16 @@ Then run `sql/02_sales_profitability_analysis.sql`. Compare its totals with the 
 - [x] Initial Sample Superstore data profiling.
 - [x] First Python data-quality and EDA notebook.
 - [x] Initial PostgreSQL staging schema and sales-analysis queries.
-- [ ] Run and validate notebook locally from a clean environment.
-- [ ] Inspect the separate inventory dataset and confirm its licence/schema.
-- [ ] Complete reproducible Python preparation scripts.
+- [ ] Run the notebook and Python analysis script locally from a clean environment.
+- [x] Add reproducible Python sales analysis script.
+- [x] Calculate and document evidence-backed sales findings and recommendations.
+- [x] Prepare local Excel reconciliation workbook (formula recalculation check pending).
+- [x] Add Power BI Power Query import template and DAX KPI measures.
+- [ ] Download and profile the separate inventory dataset.
 - [ ] Build and validate the inventory analysis.
-- [ ] Reconcile Python, SQL, Excel and Power BI KPIs.
-- [ ] Build Power BI dashboard and capture final screenshots.
-- [ ] Write evidence-backed business recommendations.
-- [ ] Publish the finished portfolio case study.
+- [ ] Execute SQL locally and reconcile Python / SQL / Excel outputs.
+- [ ] Build the Power BI report in Power BI Desktop and capture real screenshots.
+- [ ] Complete the combined business recommendations and publish the portfolio case study.
 
 ## Project quality principles
 
