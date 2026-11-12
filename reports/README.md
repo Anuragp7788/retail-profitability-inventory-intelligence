@@ -1,11 +1,18 @@
-# Business report
+# Reports and business recommendations
 
-The final report will contain:
-- Executive summary.
-- Scope and data limitations.
-- Key findings supported by SQL/Python outputs.
-- Product, store and inventory exceptions.
-- Prioritized recommendations with owners and suggested next steps.
-- Measurement plan to assess whether actions work.
+This folder will contain final stakeholder-ready outputs after analysis is complete.
 
-No findings are stated until the analysis has been run and validated.
+## Planned deliverables
+
+- Executive summary of the most important findings.
+- Product/category profitability review.
+- Discount and profit-leakage investigation.
+- Geographic performance review.
+- Inventory health and exception summary, if supported by source data.
+- Prioritised recommendations with evidence, owner/action and validation approach.
+
+## Publication standard
+
+Every recommendation must trace to a validated result. Include the calculation, time period, scope, business implication and limitations. Do not publish hypothetical savings, causal claims or unsupported impact estimates.
+
+The findings log is maintained in [docs/insights_and_recommendations.md](../docs/insights_and_recommendations.md).
