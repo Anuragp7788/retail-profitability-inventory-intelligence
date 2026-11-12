@@ -2,7 +2,7 @@
 
 An end-to-end retail analytics portfolio project focused on diagnosing profit leakage, understanding product and store performance, and identifying inventory risks.
 
-> **Project status:** Setup and data discovery. Analytical results and dashboard metrics will be added only after the source data has been inspected, cleaned, and validated.
+> **Project status:** Phase 1 — repository setup and initial profiling of the supplied Sample Superstore CSV. The initial profile is documented in [docs/data_profile_sample_superstore.md](docs/data_profile_sample_superstore.md). Final analytical findings and dashboard metrics will be added only after reproducible validation.
 
 ## Business problem
 
@@ -91,6 +91,10 @@ retail-profitability-inventory-intelligence/
 - Which products/categories have elevated return rates?
 - How do returns affect net sales and profitability?
 - If return reason or return date is unavailable, document that limitation rather than infer it.
+
+## Data profiling
+
+The first profiling notebook is [notebooks/01_data_quality_and_eda.ipynb](notebooks/01_data_quality_and_eda.ipynb). Initial observations for the supplied Sample Superstore CSV are recorded in [docs/data_profile_sample_superstore.md](docs/data_profile_sample_superstore.md). These values must be reproduced locally before being treated as final reporting figures.
 
 ## Metric definitions
 
