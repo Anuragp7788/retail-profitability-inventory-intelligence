@@ -29,7 +29,8 @@ For each milestone:
 - [ ] Confirm licences and data dictionaries
 - [x] Add first data-quality and EDA notebook
 - [ ] Re-run the notebook locally and confirm outputs
-- [ ] Create PostgreSQL schema and analytical SQL
+- [x] Add PostgreSQL staging schema and initial sales analysis SQL
+- [ ] Execute SQL locally and reconcile with Python
 - [ ] Reconcile measures in Excel
 - [ ] Build and validate Power BI dashboard
 - [ ] Publish evidence-backed recommendations
