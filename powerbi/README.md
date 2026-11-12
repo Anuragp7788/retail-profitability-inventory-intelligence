@@ -4,6 +4,13 @@ The dashboard is a planned deliverable. No completed Power BI report is included
 
 See [dashboard_specification.md](../docs/dashboard_specification.md) for the intended pages, business questions, filters and validation rules.
 
+## Starter files
+
+- [DAX KPI measures](measures.dax)
+- [Power Query CSV import template](power_query_sample_superstore.m)
+
+Update the file path in the Power Query script to your local project directory. Confirm all data types and totals after loading.
+
 ## Planned pages
 
 1. Executive overview.
