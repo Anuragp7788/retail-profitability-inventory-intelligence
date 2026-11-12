@@ -24,9 +24,11 @@ For each milestone:
 - [x] Repository initialized
 - [x] Project brief and analysis scope documented
 - [x] Candidate dataset sources recorded
-- [ ] Download and inspect datasets
+- [x] Inspect supplied Sample Superstore CSV and record initial profile
+- [ ] Download and inspect the separate inventory dataset
 - [ ] Confirm licences and data dictionaries
-- [ ] Build cleaning and quality notebooks
+- [x] Add first data-quality and EDA notebook
+- [ ] Re-run the notebook locally and confirm outputs
 - [ ] Create PostgreSQL schema and analytical SQL
 - [ ] Reconcile measures in Excel
 - [ ] Build and validate Power BI dashboard
