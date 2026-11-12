@@ -210,6 +210,7 @@ Then run `sql/02_sales_profitability_analysis.sql`. Compare its totals with the 
 | [Sample Superstore data dictionary](docs/data_dictionary_sample_superstore.md) | Fields and intended analytical use |
 | [Initial data profile](docs/data_profile_sample_superstore.md) | Observed data quality and baseline profile |
 | [Dashboard specification](docs/dashboard_specification.md) | Planned Power BI pages and interactions |
+| [Solution architecture](docs/solution_architecture.md) | Data flow, system design and integration decisions |
 | [Insights and recommendations](docs/insights_and_recommendations.md) | Evidence log for final business recommendations |
 | [Reproducibility and governance](docs/reproducibility_and_data_governance.md) | Source handling, environment and validation |
 
