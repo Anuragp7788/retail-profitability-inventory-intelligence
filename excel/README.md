@@ -18,4 +18,4 @@ Excel will provide an independent reconciliation layer for the headline business
 - Keep source data and calculated outputs distinguishable.
 - Document filters, date windows and exclusions.
 
-The workbook will be committed only after it is populated and its outputs are checked.
+A local workbook has been generated at `Retail_Profitability_Excel_Reconciliation.xlsx`. It includes the supplied raw CSV, formula-driven KPI checks and grouped result tabs. Open it in desktop Excel to recalculate formulas and compare them with the Python reference values. Keep this raw-data workbook local; do not commit or share it until the dataset redistribution licence is confirmed.
