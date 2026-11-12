@@ -32,5 +32,5 @@ For each milestone:
 - [x] Add PostgreSQL staging schema and initial sales analysis SQL
 - [ ] Execute SQL locally and reconcile with Python
 - [ ] Reconcile measures in Excel
-- [ ] Build and validate Power BI dashboard
-- [ ] Publish evidence-backed recommendations
+- [ ] Build and validate Power BI dashboard in Power BI Desktop
+- [x] Publish evidence-backed sales findings and investigation recommendations
