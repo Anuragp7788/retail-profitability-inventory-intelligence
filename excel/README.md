@@ -1,9 +1,21 @@
 # Excel validation workbook
 
-Planned workbook tabs:
-- `Data_Dictionary` — field descriptions and data types.
-- `Control_Totals` — row counts, sales, profit and units reconciliation.
-- `KPI_Checks` — independently calculated order, AOV, margin and inventory measures.
-- `Pivot_Analysis` — supporting product/category/store summaries.
+Excel will provide an independent reconciliation layer for the headline business metrics.
 
-Excel is a validation and exploration layer, not a substitute for documented source transformations.
+## Planned workbook tabs
+
+- **Read Me:** source, refresh date, data scope and workbook instructions.
+- **Raw / Staging:** controlled import of source data or validated extracts.
+- **KPI Reconciliation:** sales, recorded profit, units, distinct orders and AOV.
+- **Category & Geography:** pivot-based checks against SQL / Python summaries.
+- **Inventory Checks:** only after inventory source validation.
+
+## Validation rules
+
+- Reconcile row counts and totals with SQL and Python.
+- Calculate AOV from order-level totals.
+- Use weighted / ratio-of-sums margin, not average row margin.
+- Keep source data and calculated outputs distinguishable.
+- Document filters, date windows and exclusions.
+
+The workbook will be committed only after it is populated and its outputs are checked.
