@@ -1,0 +1,50 @@
+// Power BI measures — create these measures on the Sales table.
+// Assumed fact table name: Sales
+// Import dates as Date, not text. Add a Date dimension and relate Date[Date] to Sales[Order Date].
+
+Total Sales =
+SUM ( Sales[Sales] )
+
+Total Recorded Profit =
+SUM ( Sales[Profit] )
+
+Profit Margin % =
+DIVIDE ( [Total Recorded Profit], [Total Sales] )
+
+Total Units =
+SUM ( Sales[Quantity] )
+
+Order Count =
+DISTINCTCOUNT ( Sales[Order ID] )
+
+Customer Count =
+DISTINCTCOUNT ( Sales[Customer ID] )
+
+Product Count =
+DISTINCTCOUNT ( Sales[Product ID] )
+
+Average Order Value =
+DIVIDE ( [Total Sales], [Order Count] )
+
+Loss-Making Order Lines =
+CALCULATE (
+    COUNTROWS ( Sales ),
+    Sales[Profit] < 0
+)
+
+Sales on Loss-Making Lines =
+CALCULATE (
+    [Total Sales],
+    Sales[Profit] < 0
+)
+
+Products with Negative Aggregate Profit =
+COUNTROWS (
+    FILTER (
+        VALUES ( Sales[Product ID] ),
+        CALCULATE ( [Total Recorded Profit] ) < 0
+    )
+)
+
+// Do not average row-level profit margin. Use the ratio of total profit to total sales.
+// AOV is total sales divided by distinct orders because each order may contain multiple lines.
