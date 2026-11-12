@@ -16,3 +16,7 @@ data/processed/*
 ~$*
 *.tmp
 .DS_Store
+
+# Local Excel workbooks may contain source rows; do not commit by default
+excel/*.xlsx
+excel/*.xlsm
