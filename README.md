@@ -214,6 +214,8 @@ Then run `sql/02_sales_profitability_analysis.sql`. Compare its totals with the 
 
 ## Documentation guide
 
+| [Project execution guide](docs/project_execution_guide.md) | Step-by-step workflow, learning prompts, local folder structure and publication rules |
+
 | Document | What it explains |
 |---|---|
 | [Business requirements](docs/business_requirements.md) | Stakeholders, decisions and business questions |
