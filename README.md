@@ -4,7 +4,7 @@
 
 A practical analytics project built around a retail business question: how can leadership understand sales performance, identify profit leakage, and improve inventory decisions using reliable data?
 
-> **Current stage:** Sales and profitability analysis has been calculated and documented, with reproducible Python and SQL starter assets, Power BI measures and a local Excel reconciliation workbook. Local execution/reconciliation and the Power BI Desktop report remain to be completed. The separate inventory source still needs to be downloaded and profiled.
+> **Current stage (23 Nov 2026):** The repository retains the original Sample Superstore sales-analysis workstream described below. A second, separate Power BI workstream has now been built locally using supplied retail sales and inventory CSV files. The Power BI report has five pages and its core sales and stock-health visuals have been checked in Power BI Desktop. Inventory valuation and several interpretation details still require independent audit; the PBIP report is not yet published as a public interactive dashboard.
 
 ---
 
@@ -18,6 +18,20 @@ A practical analytics project built around a retail business question: how can l
 | **Analysis methods** | Data profiling, EDA, KPI analysis, aggregation, segmentation, trend analysis, reconciliation |
 | **Data** | Public Sample Superstore transactions + a separate candidate daily inventory dataset |
 | **Deliverables** | Reproducible notebooks, SQL analysis, validated KPIs, Power BI dashboard, business insights and portfolio case study |
+
+## Current Power BI workstream — separate supplied retail files
+
+This is a distinct analysis from the Sample Superstore workstream below. It uses two separately supplied files:
+
+- `retail_sales_ml_apl.csv`: 125,751 sales rows.
+- `retail_inventory_ml_apl.csv`: 284,755 historical inventory rows.
+
+The sales analysis currently reports (excluding rows flagged as returns): sales 11,215,681.26; COGS 6,255,526.82; calculated profit 4,960,154.44; calculated margin 44.23%; and units sold 124,542. Returns are reported separately: return value 733,571.01 and return units 7,547. These are dataset-level calculations, not real-company or client outcomes.
+
+The latest inventory view contains 60,968 product–store pairs: 703 with negative on-hand quantity, 8,406 with zero quantity and 51,859 with positive quantity. The report also displays inventory retail and cost valuation, but those values remain subject to a separate independent reconciliation and are not presented here as final findings.
+
+**Scope and limitations:** The files are treated as a supplied retail dataset in a fictional business scenario. Source provenance and redistribution licence must be confirmed before publishing raw data. The `Reason of Return` field is blank, and the only observed sales channel is Channel Alpha. The historical inventory records are reduced to the latest observed record per product–store pair for the stock-health view. This does not by itself establish demand velocity, stock cover, replenishment recommendations or causal relationships between sales and inventory. The Sample Superstore data and these supplied retail files are not joined.
+
 
 ## The business scenario
 
